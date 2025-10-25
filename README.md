@@ -43,3 +43,21 @@ sudo ./install.sh
 
 Reinstalling the driver will reset your display settings including which display is the main one, so you need to reconfigure those.
 
+
+# For OMARCHY-MAC testers:
+
+You need to update the monitors.conf file to enable your external monitor.
+
+First run ```hyprctl monitors all``` to find the name of your external monitor (e-DP1 is your built in screen). If nothing else shows please make sure you reboot after the driver installation.
+
+Once you have the monitor name:
+
+``` nvim .config/hypr/monitors.conf```
+
+add the following line (press i for insert mode)
+
+```monitor = *monitor name*, 1920x1080@60, auto, 1```
+
+and save (esc then :w)
+
+Report in the Discord if your monitor turned on and what its name is.
