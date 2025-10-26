@@ -44,7 +44,7 @@ sudo ./install.sh
 Reinstalling the driver will reset your display settings including which display is the main one, so you need to reconfigure those.
 
 
-# For OMARCHY-MAC testers:
+## For OMARCHY-MAC:
 
 You need to update the monitors.conf file to enable your external monitor.
 
